@@ -10,12 +10,6 @@ app.use(cors());
 app.use(express.json());
 
 // API Routes
-app.get("/", (req, res) => {
-  res.send({
-    activeStatus: true,
-    error: false,
-  });
-});
 app.use("/bfhl", bfhlRoutes);
 
 const PORT = process.env.PORT || 3000;
